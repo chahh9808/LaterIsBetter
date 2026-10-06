@@ -1,0 +1,58 @@
+{
+  "seed": 42,
+  "device": "cuda",
+  "model_name": "deit_small_patch16_224",
+  "pretrained": true,
+  "num_classes": 1000,
+  "dataset_name": "imagenet",
+  "dataset_split": "c",
+  "corruption": "0",
+  "level": 5,
+  "dataset_roots": {
+    "IN": "${DATA_ROOT}/imagenet",
+    "IN-C": "${DATA_ROOT}/imagenet-c",
+    "IN-R": "${DATA_ROOT}/imagenet-r",
+    "IN-S": "${DATA_ROOT}/imagenet-sketch",
+    "IN-A": "${DATA_ROOT}/imagenet-a",
+    "nabirds-c": "${DATA_ROOT}/nabirds-c"
+  },
+  "method": {
+    "name": "evit",
+    "total_r": 8,
+    "schedule": "constant",
+    "cluster_iters": 5,
+    "k_neighbors": 5,
+    "not_contiguous": false,
+    "min_radius": 2
+  },
+  "tta": {
+    "enabled": false,
+    "method": "tent",
+    "steps": 1,
+    "lr": 0.0001
+  },
+  "evaluation": {
+    "batch_size": 64,
+    "workers": 4,
+    "max_batches": null
+  },
+  "efficiency": {
+    "cpu_warmup": 10,
+    "cpu_iters": 50,
+    "gpu_warmup": 20,
+    "gpu_iters": 100,
+    "compute_cpu_latency": false,
+    "compute_gpu_latency": false,
+    "compute_gflops": true
+  },
+  "logging": {
+    "use_wandb": false,
+    "project": "token-reduction-schedules",
+    "run_name": null,
+    "group": null,
+    "tags": [
+      "token-merging",
+      "domain-shift"
+    ]
+  }
+}

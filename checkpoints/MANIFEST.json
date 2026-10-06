@@ -1,0 +1,77 @@
+{
+  "checkpoint_dir": "checkpoints/",
+  "entries": [
+    {
+      "file": "deit_base_patch16_224_domainnet126_real_timm.pth",
+      "sha256": "4c932a97b97b9e5048983a993455013aab03c84b8b6972b75bdd676a7defa724",
+      "bytes": 343647141,
+      "role": "DomainNet-126 source model (Table 5, appendix)",
+      "source": "released with the paper",
+      "format": "timm state_dict; load through checkpoint_path"
+    },
+    {
+      "file": "deit_small_patch16_224_domainnet126_real_timm.pth",
+      "sha256": "427e96bc4fe0b53cb5f14d7f6dd6b2d08fc56771812cb7fcbde6f25abf4c8071",
+      "bytes": 86921795,
+      "role": "DomainNet-126 source model (Table 5, appendix)",
+      "source": "released with the paper",
+      "format": "timm state_dict; load through checkpoint_path"
+    },
+    {
+      "file": "deit_small_patch16_224_nabirds.pth",
+      "sha256": "a6c82cd76d725f4a3f72f4d41fe2c9bf03d3530e0272c60ce16289873855b9a7",
+      "bytes": 87573953,
+      "role": "NaBirds source model (Table 5, appendix)",
+      "source": "released with the paper",
+      "format": "timm state_dict; load through checkpoint_path"
+    },
+    {
+      "file": "vit_base_patch16_224_domainnet126_real_timm.pth",
+      "sha256": "c8acce364606a1a5a6df52dd9fb0c1dd215e19ed5ca7722a0ed6f220de5ba9d2",
+      "bytes": 343646983,
+      "role": "DomainNet-126 source model (Table 5, appendix)",
+      "source": "released with the paper",
+      "format": "timm state_dict; load through checkpoint_path"
+    },
+    {
+      "file": "vit_base_patch16_clip_224.openai_ft_in1k_domainnet126_real_timm.pth",
+      "sha256": "cbf591d4bb1f9dbc462d46a2248da2c4e987d2793cb2179b0be880b610386d29",
+      "bytes": 343653717,
+      "role": "DomainNet-126 source model (Table 5, appendix)",
+      "source": "released with the paper",
+      "format": "timm state_dict; load through checkpoint_path"
+    },
+    {
+      "file": "vit_small_patch16_224_domainnet126_real_timm.pth",
+      "sha256": "cdde8465db4f035bf97650f42014eda6741428a54ec92b36d6e856c8b85f3e82",
+      "bytes": 86921637,
+      "role": "DomainNet-126 source model (Table 5, appendix)",
+      "source": "released with the paper",
+      "format": "timm state_dict; load through checkpoint_path"
+    },
+    {
+      "file": "vit_small_patch16_224_nabirds.pth",
+      "sha256": "1976a6720fe94e3904792c8e169dbe5b83728cdbd483e07a076601343e8e928b",
+      "bytes": 87577315,
+      "role": "NaBirds source model (Table 5, appendix)",
+      "source": "released with the paper",
+      "format": "timm state_dict; load through checkpoint_path"
+    },
+    {
+      "file": "mae_finetuned_vit_base.pth",
+      "sha256": "70967075456a27c1fcc54e4d15a05112bb68f1416a50c2b500169aade59bca02",
+      "bytes": 346326087,
+      "role": "MAE-pretrained ViT with global-average-pooling readout (Table 4, appendix)",
+      "source": "https://dl.fbaipublicfiles.com/mae/finetune/mae_finetuned_vit_base.pth",
+      "format": "official MAE release; the weights are under the 'model' key"
+    },
+    {
+      "file": "mae_finetuned_vit_large.pth",
+      "sha256": "4c2999a2735fd1b7a2d14e45a1bf323ffb8f8d484b713720eddf593059f94da5",
+      "bytes": 1217415191,
+      "role": "MAE-pretrained ViT with global-average-pooling readout (Table 4, appendix)",
+      "source": "https://dl.fbaipublicfiles.com/mae/finetune/mae_finetuned_vit_large.pth",
+      "format": "official MAE release; the weights are under the 'model' key"
+    }
+  ]
+}

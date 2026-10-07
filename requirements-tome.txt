@@ -1,0 +1,22 @@
+# ToMe runs: every ImageNet-C table in the paper except the four non-ToMe reducers.
+# Verified against the environment those runs were produced in (python 3.10.20).
+torch==2.7.1+cu126
+torchvision==0.22.1+cu126
+timm==0.9.10
+tome==0.1
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.7.2
+pandas==2.3.3
+Pillow==12.2.0
+tqdm==4.67.3
+thop==0.1.1.post2209072238          # the GFLOPs counter every iso-GFLOPs comparison uses
+einops==0.8.2
+cma==4.4.4                          # CMA-ES, used by the FOA test-time adaptation baseline
+huggingface_hub==1.15.0
+safetensors==0.7.0
+wandb==0.27.0                       # optional; logging is off by default
+
+# Optional, imported behind a fallback and absent from the environment the paper ran in:
+#   cuml, cupy   the RAPIDS clustering backend for ATC (the scikit-learn path is the default)
+#   datasets     the HuggingFace loader path in src/data.py

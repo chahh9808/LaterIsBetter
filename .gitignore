@@ -1,0 +1,23 @@
+# run outputs and data
+output/
+data/
+wandb/
+checkpoints/*
+!checkpoints/MANIFEST.json
+!checkpoints/fetch.sh
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.npy
+*.npz
+*.csv
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+# editors and systems
+.DS_Store
+.vscode/
+.idea/
